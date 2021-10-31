@@ -1,0 +1,195 @@
+/*======= flexbox properties =========*/
+
+/**** container ****/
+/* display: flex; */
+/* flex-direction: row | row-reverse | column | column-reverse; */
+/* flex-wrap: wrap | no-wrap | wrap-reverse; */
+/* flex-flow: <flex-direction value> <flex-wrap value>; (shorthand for the two properties) */
+/* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; */
+/* align-items: stretch | flex-start | flex-end | center | baseline; --> align items within the lines */
+/* align-content: flex-start | flex-end | center | space-between | space-around | stretch; --> align the lines within the container */
+
+/**** item ****/
+/* order: <a number>; (see example below) */
+/* flex-grow: <a number>; (relative to other items in the same continer, applied when there is more space than needed for base size) */
+/* flex-shrink: <a number>; (relative to other items in the same container, applied  when there is less space than needed for the base size) */
+/* flex-basis: <length> | auto; (the size of the element before the other properties are applied) */
+/* flex: <flex-grow value> <flex-shrink value> <flex-basis value>; (shorthand for the three properties) */
+/* align-self: auto | flex-start | flex-end | center | baseline | stretch; (individual alignment, overriding the one specified by align-items or default) */
+
+body { font-family: helvetica, arial, sans-serif; font-size: large; }
+
+.flex-container {
+    width: 100%;
+    padding: 0px;
+    list-style: none;
+    border: 2px solid silver;
+    min-height: 12rem;
+}
+
+.flex-item {
+    box-sizing: border-box;
+    
+    width: 5.5rem;
+    min-height: 2.5rem;
+    margin: 0.1rem;
+    padding: 0.9rem;
+    
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#c1>.flex-item {
+    background-color: tomato;
+}
+
+#c1 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#c2>.flex-item {
+    background-color: aquamarine;
+}
+
+#c2 {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+#c3>.flex-item {
+    background-color: goldenrod;
+}
+#c3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#c4>.flex-item {
+    background-color: greenyellow;
+
+}
+
+#c4 {
+    height: 12rem;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+#c5>.flex-item {
+    background-color: lightsalmon;
+}
+
+#c5 {
+    justify-content: space-around;
+}
+
+#c5 li.one {
+    order: 0;
+    align-self: flex-start;
+}
+
+#c5 li.three {
+    order: 1;
+    align-self: flex-start;
+} 
+
+#c5 li.five {
+    order: 2;
+    align-self: flex-start;
+}
+
+#c5 li.seven {
+    order: 3;
+    align-self: flex-start;
+}
+
+#c5 li.two {
+    order: 4;
+    align-self: flex-end;
+}
+
+#c5 li.four {
+    order: 5;
+    align-self: flex-end;
+}
+
+#c5 li.six {
+    order: 6;
+    align-self: flex-end;
+}
+
+#c5 li.eight {
+    order: 7;
+    align-self: flex-end;
+}
+
+#c6>.flex-item {
+    background-color: seagreen;
+}
+
+#c6 {
+
+}
+
+#c6 li.one {
+    flex-grow: .75;
+}
+
+#c6 li.two {
+    flex-grow: .75;
+}
+
+#c6 li.three {
+    flex-grow: .75;
+}
+
+#c6 li.four {
+    flex-grow: 2.5;
+}
+
+#c6 li.five {
+    flex-grow: 3.5;
+}
+
+#c6 li.six {
+    flex-grow: .75;
+}
+
+#c6 li.seven {
+    flex-grow: .75;
+}
+
+#c6 li.eight {
+    flex-grow: .75;
+}
+
+#c7>.flex-item {
+    background-color: palevioletred;
+}
+
+#c7 {
+
+}
+
+#c7 li.one {
+    flex-basis: 25%;
+}
+
+#c7 li.two {
+    flex-basis: 50%;
+}
+
+#c7 li.three {
+    flex-basis: 25%;
+}

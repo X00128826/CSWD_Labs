@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css" />
+	<title>CSWD Lab: Flexbox News Page with Van Gogh</title>
+	<style>
+	 figure { height: 10rem; }
+	 img { margin-right: 2rem; height: 100%; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<div id="content-no-nav">
+
+	    <h1>Flexbox Exercise</h1>
+
+	    <ul>
+		<li>First, read the following article that describes how to create layouts with <strong>flexbox</strong>:
+		    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks Flexbox Article</a>. The article is laid out so that rules for the flexbox container are listed in the left column and the rules for the contained flexbox items are listed in the right column.</li>
+		<li>Then complete the seven exercises below. In each you have to turn an element in file <em>index.html</em> into a flexbox with particular properties.</li>
+		<li>Before starting on the exercises, open the file <em>index.html</em> in a text editor and inspect its contents. The elements intended to become flexbox containers have been given ids <span class="fw">c1</span>, <span class="fw">c2</span> etc. and they each contain 8 elements.</li>
+		<li><u>The only file you are allowed to edit is <em>flexbox_exercise.css</em>.</u></li>
+		<li>You should not define any new classes or ids but you will have to add new rulesets into the file <em>flexbox_exercise.css</em>. For example, to define rules for the first container, you will add ruleset <span class="fw">#c1{...}</span> and to add rules for the second item in the third container you will add
+		    the ruleset <span class="fw">#c3>.two{...}</span>.</li>
+	    </ul>
+
+	    <section>
+		<h2>Exercise 0</h2>
+		<ul>
+		    <li>Turn the elements of class <span class="fw">flex-container</span> in <span class="fw">index.html</span> into a <strong>flexbox</strong>, by adding a <span class="fw">display</span> property with the appropriate value in the CSS file.</li>
+		</ul>
+	    </section>
+	    <section>
+		<h2>Exercise 1</h2>
+		<ul>
+		    <li>Use properties <span class="fw">justify-content</span> and <span class="fw">align-items</span> on the element with id <span class="fw">c1</span> to achieve the rendering of elements shown in the pictures for two different browser widths.
+			<figure>
+			    <img alt="Exercise 1 target wide" src="images/ex1a.png" />
+			    <img alt="Exercise 1 target narrow" src="images/ex1b.png" />
+			</figure>
+		    </li>
+		</ul>
+	    </section>
+
+	    <section>
+		<h2>Exercise 2</h2>
+		<ul>
+		    <li>Use properties <span class="fw">justify-content</span> and <span class="fw">flex-wrap</span> on the element with id <span class="fw">c2</span> to achieve the rendering of elements shown in the pictures for two different browser widths.
+			<figure>
+			    <img alt="Exercise 2 target wide" src="images/ex2a.png" />
+			    <img alt="Exercise 2 target narrow" src="images/ex2b.png" />
+			</figure>
+		    </li>
+		</ul>
+
+	    </section>
+	    <section>
+		<h2>Exercise 3</h2>
+		<ul>
+		    <li>Use properties <span class="fw">flex-direction</span>, <span class="fw">flex-wrap</span>, <span class="fw">justify-content</span> and <span class="fw">align-content</span> on the element with id <span class="fw">c3</span> to achieve the rendering of elements shown in the pictures for two different browser widths.
+			<figure>
+			    <img alt="Exercise 3 target wide" src="images/ex3a.png" />
+			    <img alt="Exercise 3 target narrow" src="images/ex3b.png" />
+			</figure>
+		    </li>
+		</ul>
+
+	    </section>
+	    <section>
+		<h2>Exercise 4</h2>
+		<ul>
+		    <li>Add the following CSS rule for the element with id <span class="fw">c4</span>:<br />
+			<span class="fw">height: 12rem;</span>
+		    </li>
+		    <li>Now use properties <span class="fw">flex-direction</span>, <span class="fw">flex-wrap</span>, <span class="fw">justify-content</span> and <span class="fw">align-content</span> on the element with id <span class="fw">c4</span> to achieve the rendering of elements shown in the pictures for two different browser widths. Remember that <span class="fw">justify-content</span>, which normally arranges elements horizontally, will be arranging the elements vertically as they are listed in columns rather than rows. Similarly, <span class="fw">align-content</span> will be affecting the horizontal arrangement.
+			<figure>
+			    <img alt="Exercise 4 target wide" src="images/ex4a.png" />
+			    <img alt="Exercise 4 target narrow" src="images/ex4b.png" />
+			</figure>
+		    </li>
+		</ul>
+
+	    </section>
+	    <section>
+		<h2>Exercise 5</h2>
+		<ul>
+		    <li>Use property <span class="fw">justify-content</span> on the element with id <span class="fw">c5</span> and properties <span class="fw">align-self</span> and <span class="fw">order</span> on its child elements, to achieve the rendering of elements shown in the pictures for two different browser widths.
+		    <figure>
+			<img alt="Exercise 5 target wide" src="images/ex5a.png" />
+			<img alt="Exercise 5 target narrow" src="images/ex5b.png" />
+		    </figure>
+		</ul>
+
+	    </section>
+	    <section>
+		<h2>Exercise 6</h2>
+		<ul>
+		    <li>Use property <span class="fw">flex-grow</span> on the child elements of the element with id <span class="fw">c6</span> to achieve the rendering of elements shown in the pictures for two different browser widths.</li>
+		    <figure>
+			<img alt="Exercise 6 target wide" src="images/ex6a.png" />
+			<img alt="Exercise 6 target narrow" src="images/ex6b.png" />
+		    </figure>
+		</ul>
+
+	    </section>
+	    <section>
+		<h2>Exercise 7</h2>
+		<ul>
+		    <li>Use property <span class="fw">flex-basis</span> on the child elements of the element with id <span class="fw">c7</span> to achieve the rendering of elements shown in the pictures for two different browser widths. Item 1 and 3 take up a quarter of the flexbox width each and item 2 takes up half of it.</li>
+		    <figure>
+			<img alt="Exercise 7 target wide" src="images/ex7a.png" />
+			<img alt="Exercise 7 target narrow" src="images/ex7b.png" />
+		    </figure>
+		</ul>
+	    </section>
+	</div>
+    </body>
+
+</html>
