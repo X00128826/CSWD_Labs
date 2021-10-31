@@ -1,0 +1,130 @@
+<!DOCTYPE html><html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png">
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	<style> #content { background: lightgray; } </style>
+	<title>Javascript Introductory Lab</title>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    <ul class="commands">
+		<li data-filename="js_in_html_lab_sheet.html" class="savehtml">Save file</li>
+	    </ul>
+
+	</nav>
+
+
+	<div id="content">
+	    
+	    <h1>Javascript Introductory Lab</h1>
+
+	    <h4>Instructions</h4>
+	    <p>For each exercise, open the HTML file (e.g. <span class="fw">js_in_html_exercise1.html</span>) both in a browser and in a text editor. Look at how the file is displayed and also at the code to answer the questions below.</p>
+	    <p>When finished, save the form with your answers by one of the following methods:</p>
+	    <ol>
+		<li><strong>[May not work in some browsers e.g. Edge.]</strong> Press the <strong>Save file</strong> button on the left, which downloads an HTML file into the Downloads folder.</li>
+		<li>Press <span class="fw">Ctrl-p</span> to print, then choose PDF as the printer. This will give you the option to specify the name of a PDF file.</li>
+	    </ol>
+	    <p>Upload the saved form to your CSWD GitHub repository.</p>
+	    
+	    <form class="lab-answer-form">
+		Name: <input type="text" size="30" value="James Norris">  Group: <select><option selected="selected">ITM</option><option>SWA</option><option>SWB</option></select>
+		<h4>Exercise 1</h4>
+		<ol type="a">
+		    <li>
+			<p>The pop-up alert windows that appear when you load the <span class="fw">js_in_html_exercise1.html</span> file in the browser are being created by some Javascript code. It can be found inside HTML <span class="fw">script</span> elements. Find these elements in <span class="fw">js_in_html_exercise1.html</span>. What code causes the windows to pop up?</p>
+			<textarea rows="2" cols="80">alert</textarea>
+		    </li>
+		    <li>
+			<p>Three alerts pop up. Examine the HTML file and explain what determines the order in which they pop up.</p>
+			<textarea rows="3" cols="80">The order they are placed in the HTML document</textarea>
+		    </li>
+		    <li>
+			<p>From the way that the alert pop-ups interweave with the appearance of parts of the page, when do you think the code for creating the alerts is called?</p>
+			<select>
+			    <option>Before the page is loaded</option>
+			    <option selected="selected">While the page is being loaded</option>
+			    <option>After the page is loaded</option>
+			</select>
+			<p>Explain your answer</p>
+			<textarea rows="4" cols="80">While the page is being loaded in, the javascript inetrpreter is going through the script to see if there is any javascript. It does this as the page is loading in.
+			</textarea>
+		    </li>
+
+		    <li>
+			<p>All the <span class="fw">script</span> elements in <span class="fw">js_in_html_exercise1.html</span> are valid. What can you say about where in an HTML file <span class="fw">script</span> elements can be placed?</p>
+			<textarea rows="3" cols="80">Script elements can be placed inside either the head or body of the HTML document. Only javascript my be placed between the script elements, however.</textarea>
+		    </li>
+		    <li>
+			<p>Copy the following code into the <span class="fw">head</span> element of the HTML file.<code>
+			    </code></p><pre><code>&lt;style&gt;
+    script { display: block; color: red; } 
+&lt;/style&gt;</code></pre><code>
+			</code>
+			
+			
+			Now load the page. What do you see? Why do you think the behaviour was different before?
+			<p></p>
+			
+			<textarea rows="4" cols="80">The alerts stay on the page as red texts after clicking ok on the alerts. This is because extra javscript was added to the head element affecting the alerts, hence the different behaviour.</textarea>
+		    </li>
+		    <li>
+			<p>Do some detective work to find out where the last alert is being invoked. How does it differ from the other alerts?</p>
+			<textarea rows="4" cols="80">The code: script src="js_b_in_html_exercise1.js"&gt; is what is calling the last alert.</textarea>
+		    </li>
+
+		</ol>
+
+		<h4>Exercise 2</h4>
+		<ol type="a">
+		    <li>
+			<p>The Javascript statment <span class="fw">alert("some string")</span> is a call to a function (a piece of functionality) provided for our use by the browser, but we can define and use our own functions (pieces of functionality that we might like to reuse).</p>
+			<p>In the HTML file <span class="fw">js_in_html_exercise2.js</span> find <span class="fw">callAlertHead</span> and <span class="fw">callAlertBody</span>. These are two functions defined and used in the file (each function name appears in the file twice). How do we know the difference between a definition and a call (the use of a function)?</p>
+			<textarea rows="4" cols="80" style="width: 806px; height: 259px;">A definition a a block of code that is inactive. e.g.
+			
+				callAlertHead();
+				callAlertBody();
+			
+			
+To make it active it must be called. This is what calling is, enacting a function that is just sitting there. e.g.
+		
+			function callAlertBody() {
+				alert("Hello from the BODY!");
+				}
+		</textarea>
+		    </li>
+		    <li>
+			<p>What do the functions <span class="fw">callAlertBody</span> and <span class="fw">callAlertHead</span> do?</p>
+			<textarea rows="4" cols="80">As the page is loading in, the alerts are called upon respectively. So the alert called in the head is interpreted and called first (callAlertHead), then the alert in the body (callAlertBody) is called.</textarea>
+		    </li>
+		    <li>
+			<p>Why is the second alert ("Hello from the BODY!") not appearing when you open the page in the browser?</p>
+			<textarea rows="4" cols="80">It is not alerting as the function has already been called. If you want it to alert then place callAlertBody underneath the function.</textarea>
+		    </li>
+		    <li>
+			<p>Find the definition of function <span class="fw">callAlertBody</span> and move it somewhere that will make the second alert pop up when the page is opened. Explain your solution.</p>
+			<textarea rows="4" cols="80">I moved it just below the head tag but anywhere above the call functions and in the body would be suitable as well.</textarea>
+		    </li>
+		</ol>
+		
+	    </form>
+
+	    <script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/main.js"></script>
+	    <script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/file.js"></script>
+	    <script>init_all();</script>
+	</div>
+    
+
+
+</body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Events and Handlers Exercises</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    <ul class="links">
+	    </ul>
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Event and Handler Exercises</h1>
+
+	    <p>This file provides both the instructions and the initial elements for the exercises. Open this file in a text editor to modify it and after each change reload it in the browser to test the results.</p>
+	    <p>Each exercise has an id in the form <strong>EX99</strong>. You can use these identifiers to search for the exercises in the text editor.</p>
+	    <!----------------------------------------- EXERCISE EX01 ----------------------------------------->
+	    <section id="EX01" class="exercise mt1">
+		<p>Exercise: Alerting event handler in HTML [EX01]</p>
+		<p>Add an event handler that pops up an alert to the button below, then click on the button to check if the click event is being handled as expected.</p>
+		<button onclick="alert('This is an alert')">Click to send alert</button>   
+
+		<p>The table shows what the various event handling components are in this case. In the remaining exercises you will be filling in the table values.</p>
+		<table class="ordinary">
+		    <tr><th>Event</th><td>click</td></tr>
+		    <tr><th>Event target element (the event happens on this element)</th><td>button "Click to send alert"</td></tr>
+		    <tr><th>Event handler behaviour (what the event handler does)</th><td>pops up an alert window</td></tr>
+		    <tr><th>Objects acted upon by the event handler</th><td>the window (alert is a window method)</td></tr>
+		</table>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX01 ----------------------------------------->
+
+	    <!----------------------------------------- EXERCISE EX02 ----------------------------------------->
+	    <section id="EX02" class="exercise mt1">
+		<p>Exercise: Console-logging event handler in HTML [EX02]</p>
+		<p>Part 1: Add an event handler to the button below so that when it is clicked, a message is written to the console. Use the method <a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log"><span class="fw">console.log()</span></a> (e.g. <span class="fw">console.log('Hello from the console!')</span>). When finished, test the handler by opening the console and checking that your message appears when the button is clicked.</p>
+		<p>Part 2: Add another button beside the one below. When this new button is clicked, the console should be cleared (use method <span class="fw">console.clear()</span>).</p>
+		<button onclick="console.log('Hello');">Click to write to console</button> 
+		<button onclick="console.clear();">Click to clear console</button>  
+		
+		<p>Fill in the table for the two event handlers added in this exercise.</p>
+		<table class="ordinary">
+		    <tr><th></th><th>Part 1</th><th>Part 2</th></tr>
+		    <tr><th>Event</th><td>Click</td><td>Click</td></tr>
+		    <tr><th>Event target element (the event happens on this element)</th><td>Button "Click to write something on the console"</td><td>Button "Click to clear console"</td></tr>
+		    <tr><th>Event handler behaviour (what the event handler does)</th><td>Outputs a message onto the console</td><td>Clears console</td></tr>
+		    <tr><th>Objects acted upon by the event handler</th><td>The console</td><td>The console</td></tr>
+		</table>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX02 ----------------------------------------->
+
+	    <!----------------------------------------- EXERCISE EX03 ----------------------------------------->
+	    <section id="EX03" class="exercise mt1">
+		<p>Exercise: Element-modifying event handler in HTML [EX03]</p>
+		<p>Add an event handler to the button below so that when it is clicked it modifies the text in the box on the right. Use the following code for the event handler:</p>
+		<p class="fw">document.getElementById('my_text_box').innerHTML='Something new!';</p>
+		<p class="question">Can you explain what the code is doing?</p><div class="answer" hidden>
+		    <p>In this statement:
+			<ul>
+			    <li>the method <span class="fw">getElementById</span> is called on the <span class="fw">document</span> object (using the dot between the object name and the method name)</li>
+			    <li>it returns the object representing the element with id <span class="fw">my_text_box</span> (if it exists in the document)</li>
+			    <li>the property <span class="fw">innerHTML</span> (which holds the content of the element in the form of a text string) is accessed (using a dot and the property name after the expression that gives us the object)</li>
+			    <li>a new value (<span class="fw">'Something new!'</span>) is assigned to property <span class="fw">innerHTML</span> using the assignment operator (<span class="fw">=</span>)</li>
+			</ul>
+		    </p>
+		</div>
+		<p>For the handler to work, the element with text <span class="fw">Something old...</span> should have id <span class="fw">my_text_box</span>. Add it.</p>
+
+		<section class="flcont fljust-spev">
+		    <button onclick="document.getElementById('my_text_box').innerHTML='Something new!'";>Click to change from old to new</button><aside id="my_text_box" class="box">Something old...</aside> 
+		</section>
+		<p>Fill in the table for the event handler added in this exercise.</p>
+		<table class="ordinary">
+		    <tr><th>Event</th><td>Click</td></tr>
+		    <tr><th>Event target element (the event happens on this element)</th><td>Button "Click to change from old to new"</td></tr>
+		    <tr><th>Event handler behaviour (what the event handler does)</th><td>Changes string</td></tr>
+		    <tr><th>Objects acted upon by the event handler</th><td>The document</td></tr>
+		</table>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX03 ----------------------------------------->
+
+	    <!----------------------------------------- EXERCISE EX04 ----------------------------------------->
+	    <script src="ex04.js"></script>
+	    <section id="EX04" class="exercise mt1">
+		<p>Exercise: Element-modifying function as event handler in HTML [EX04]</p>
+		<p>Part 1: Set up an event handler on the button below (<strong>Click to change from old to new again</strong>) so that when the button is clicked, the function <span class="fw">renew</span> is called (code: <span class="fw">renew();</span>). The function is defined in file <span class="fw">ex04.js</span> and the file included via the <span class="fw">script</span> element just above this exercise. You will also need to add the correct id to the element that is being changed by the function. You will be able to say what the id is by looking at the function.</p>
+		<p>Part 2: Add another button element between the button and the box with text below, then set up a handler that hides the box with text. The property that needs to be changed on the object representing the element is <span class="fw">hidden</span> and it needs to be assigned the value <span class="fw">true</span> (in the same way that previously we were assigining some text to the property <span class="fw">innerHTML</span>). Write the handler as a function and define it, giving it a name of your choice, in file <span class="fw">ex04.js</span>.</p>
+
+		<section class="flcont fljust-spev">
+		    <button onclick="renew()">Click to change from old to new again</button> 
+			<button onclick="hide()">Click to hide the box and it's text</button>
+		    <aside class="box" id="my_other_text_box">Something old... again</aside> 
+		</section>
+		<p>Fill in the table for the event handlers added in this exercise.</p>
+		<table class="ordinary">
+		    <tr><th></th><th>Part 1</th><th>Part 2</th></tr>
+		    <tr><th>Event</th><td>Click</td><td>Click</td></tr>
+		    <tr><th>Event target element (the event happens on this element)</th><td>Button "Change from old to new again"</td><td>Button "Click to hide the box and it's text"</td></tr>
+		    <tr><th>Event handler behaviour (what the event handler does)</th><td>Changes string</td><td>Makes id class dissapear</td></tr>
+		    <tr><th>Objects acted upon by the event handler</th><td>The document</td><td>The document</td></tr>
+		</table>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX04 ----------------------------------------->
+
+	    <!----------------------------------------- EXERCISE EX05 ----------------------------------------->
+	    <script>
+			function change()
+			{  
+                    document.getElementById('btn1').style.backgroundColor='yellow';  
+             
+            }
+	    </script>
+	    <section id="EX05" class="exercise mt1">
+		<p>Exercise: Same target and object event handler in HTML [EX05]</p>
+		<p>Write and set up a handler that will change the colour of the button below when the button is clicked. The property you will be changing on the HTML element object is <span class="fw">style.background</span>. The handler should be a function and it should be included in this HTML file in the <span class="fw">script</span> element that appears just above this exercise. Note that the button acts both as target element (the one with the handler) and as the element changed by the handler.</p>
+
+		<section class="flcont fljust-start">
+		    <button onclick="change()" id="btn1">Click to change my colour</button>  
+		</section>
+		<p>Fill in the table for the event handlers added in this exercise.</p>
+		<table class="ordinary">
+		    <tr><th>Event</th><td>Click</td></tr>
+		    <tr><th>Event target element (the event happens on this element)</th><td>Button "Click to change background colour"</td></tr>
+		    <tr><th>Event handler behaviour (what the event handler does)</th><td>Changes backgorund colour of button who's id is "btn1"</td></tr>
+		    <tr><th>Objects acted upon by the event handler</th><td>The document</td></tr>
+		</table>
+	    </section>
+	    <!------------------------------------- END EXERCISE EX05 ----------------------------------------->
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/qtip2/3.0.3/jquery.qtip.min.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/common.js"></script>
+	<script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/main.js"></script>
+	<!-- script src="../../../common/res/scripts/main.js"></script -->
+	<script>init_all();</script>
+    </body>
+</html>
+
