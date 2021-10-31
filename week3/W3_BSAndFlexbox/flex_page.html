@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta charset="UTF-8" />
+	<title>News</title>
+	<style>
+	 * { font-family: arial, helvetica, san-serif; box-sizing: border-box; }
+	 body { margin: 0; padding: 0; }
+	 .card { border: 1px solid rgba(0, 0, 0, 0.125); border-radius: 0.3rem; margin: 0; }
+	 .bg-gray { background-color: gray; }
+	 .bg-cadetblue { background-color: cadetblue; }
+	 .bg-red { background-color: red; }
+	 .bg-orange { background-color: orange; }
+	 .bg-green { background-color: green; }
+	 .bg-verylightgray { background-color: #fafafa; }
+	 .txt-white { color: white; }
+
+	 /* Add your CSS here */
+	.row {display: flex;}
+	.row {justify-content: space-evenly;}
+
+	.col-2.mt-3 {padding: 25px;
+				width: 500px;
+				text-align: center;		 
+	}
+
+	.col-3.mt-3 {
+				padding: 20px;
+				width: 500px;
+	}
+
+	.card {
+		padding-left: 15px;
+	}
+
+	
+	 
+	</style>
+    </head>
+
+    <body>
+		<div class="container-fluid">
+				<div class="row">
+				<div class="col-2 mt-3">
+					<div class="card bg-gray txt-white py-3">
+					<h1>!</h1>
+					</div>
+				</div>
+				<div class="col-2 mt-3">
+					<div class="card bg-cadetblue py-3">
+					<h1>N</h1>
+					</div>
+				</div>
+				<div class="col-2 mt-3">
+					<div class="card bg-red py-3">
+					<h1>E</h1>
+					</div>
+				</div>
+				<div class="col-2 mt-3">
+					<div class="card bg-orange py-3">
+					<h1>W</h1>
+					</div>
+				</div>
+				<div class="col-2 mt-3">
+					<div class="card bg-green py-3">
+					<h1>S</h1>
+					</div>
+				</div>
+				<div class="col-2 mt-3">
+					<div class="card bg-gray txt-white py-3">
+					<h1>!</h1>
+					</div>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-3 mt-3">
+					<div class="card bg-verylightgray text-left py-3 p-3">
+					<h4>Home news</h4>
+					<p>Something happened here</p>
+					</div>
+				</div>
+				<div class="col-3 mt-3">
+					<div class="card bg-verylightgray py-3 p-3">
+					<h4>Breaking news</h4>
+					<p>Read news as it happens</p>
+					</div>
+				</div>
+				<div class="col-3 mt-3">
+					<div class="card bg-verylightgray text-left py-3 p-3">
+					<h4>International news</h4>
+					<p>Something happened there</p>
+					</div>
+				</div>
+				<div class="col-3 mt-3 p">
+					<div class="card bg-verylightgray text-left py-3 p-3">
+					<h4>Opinion</h4>
+					<p>IMHO...</p>
+					</div>
+				</div>
+				</div>	  
+		</div>
+    </body>
+</html>

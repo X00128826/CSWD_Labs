@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSWD Lab Exercise</title>
+	<link href="grid_exercise.css" rel="stylesheet"/>
+	<style>
+	 body { font-family: helvetica, arial, sans-serif; font-size: large; }
+	 section { margin: 3em 0 0 0; clear: both; }
+	 .fw, pre { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+	 .instructions li { margin-top: 1rem; margin-bottom: 0; }
+	 figure { width: 100%; margin: 0; padding: 0.5rem 0; display: flow-root; }
+	 figure img { width: 100%; float: left; font-weight: bold; font-style: italic; }
+	 .basic-border { border: 1px solid black; }
+	</style>
+    </head>
+    <body>
+	<h1>Client-Side Web Development - Building a Bootstrap-Styled HTML Page from Scratch (1)</h1>
+	<p>In this exercise you will be creating a web page from scratch and styling it with the use of Bootstrap 4 classes.</p>
+	<h4>Instructions</h4>
+	<ol class="instructions">
+	    <li>Create an HTML file with the help of Emmet tools
+		<ol type="a">
+		    <li>Open Visual Studio Code.</li>
+		    <li>Press <strong>Ctrl-N</strong> to open a new file.</li>
+		    <li>Press <strong>Ctrl-S</strong> to save the file (a dialogue will open up to allow you to pick a location and a file name).</li>
+		    <li>Built into VS Code are Emmet tools for web developers, which you can use to speed up creation of web content. To create a skeleton web page using Emmet, type <span class="fw">doc</span> at the top of the empty file. A pop-up menu with the option <span class="fw">doc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Emmet Abbreviation ⓘ</span> should appear as you type the 'c'. Click on this menu option and the text of a skeleton HTML page will be written into your file.</li>
+		    <li>Press <strong>Ctrl-S</strong> to save the file.</li>
+		</ol>
+	    </li>
+	    <li>Link in the Bootstrap 4 CSS
+		<ol type="a">
+		    <li>Find the <em>BS4 Get Started</em> page in <em>w3schools</em></li>
+		    <li>In the section <em>Bootstrap CDN</em> identify the line that you need to copy into the HTML document header in order to include the Bootstrap CSS.</li>
+		    <li>Copy the identified line and paste it into your document. Into what part of the HTML document do you paste the line? What type of HTML element is it? </li> 
+		</ol>
+	    </li>
+	    <li>Create a navbar
+		<ol type="a">
+		    <li>Use <em>w3schools</em> or other reference website to copy a suitable navbar into the body of your html document.</li>
+		    <li>Change the navbar so that its contents and style match those of the navbar in the picture. The image logo.png is provided with these instructions.</li> 
+		</ol>
+	    </li>
+	    <li>Lay out the page
+		<ol type="a">
+		    <li>At this stage the <strong>body</strong> element of your document should only have one child element: the <strong>nav</strong> element.</li>
+		    <li>Create a Bootstrap 4 container: a <strong>div</strong> element assigned to class <strong>container-fluid</strong>.</li>
+		    <li>Next, by using Boostrap <strong>row</strong>, <strong>column</strong> and <strong>card</strong> classes create the layout shown in the picture. Remember:
+			<ul>
+			    <li>place only rows immediately inside the container</li>
+			    <li>place only columns immediately inside rows</li>
+			    <li>place only rows or cards immediately inside columns</li>
+			</ul>
+		    </li>
+		</ol>
+	    </li>
+	    <li>Add styling details
+		<ol type="a">
+		    <li>Use bootstrap to style padding, margins, font weights, background colours etc. so that the page looks like that in the picture.</li>
+		</ol>
+	    </li>
+	</ol>
+	<img alt="BS4 from scratch target"  src="bs4_m_from_scratch_target.png"><br/><br/>
+
+    </body>
+</html>

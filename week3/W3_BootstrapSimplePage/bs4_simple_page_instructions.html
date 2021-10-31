@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>CSWD Lab: Bootstrap 4 Simple Page Exercise</title>
+	<link href="grid_exercise.css" rel="stylesheet"/>
+	<style>
+	 body { font-family: helvetica, arial, sans-serif; font-size: x-large; }
+	 section { margin: 3em 0 0 0; clear: both; }
+	 .fw, pre { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+	 .instructions li { margin-top: 1rem; margin-bottom: 0; }
+	 figure { width: 100%; margin: 0; padding: 0.5rem 0; display: flow-root; }
+	 figure img { width: 40em; max-width: 100%; float: left; font-weight: bold; font-style: italic; }
+	 .basic-border { border: 1px solid black; }
+	</style>
+    </head>
+    <body>
+	<h1>CSWD Lab: Bootstrap 4 Simple Page Exercise</h1>
+
+	<ul class="instructions">
+	    <li>Your task is to edit the file <span class="fw">bs4_simple_page.html</span>, supplied as part of the lab material, to produce the page layout shown in the picture.
+		<figure>
+		    <img class="basic-border" alt="Bs4 Simple Page Exercise Target" src="images/bs4sptgt.png"/>
+		</figure>
+	    </li>
+	    <li>The rules:
+		<ul>
+			<li>you may add an HTML element and nested elements for the navigation bar at the top</li>
+		    <li>you may assign HTML elements that have the <span class="fw">class</span> attribute to new classes, which means you can:
+			<ul>
+			    <li>change <span class="fw">class=""</span> to <span class="fw">class="some-class"</span></li>
+			    <li>change <span class="fw">class="some-class"</span> to <span class="fw">class="some-class some-other-class"</span></li>
+			</ul>
+			<p><em>Note that an element can be assigned to more than one class!</em></p>
+		    </li>
+		    <li>the classes to which you assign the elements <strong>must be Bootstrap 4 classes</strong></li>
+		    <li>you may not make any other kind of modification to the file</li>
+		    <li>you may not use any other files</li>
+		</ul>
+	    </li>
+	    <li>Tips:
+		<ul>
+		    <li>use the Bootstrap <span class="fw">navbar</span> for the nav section (you will find help with this <a href="https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp">here</a>)</li>
+		    <li>note that the <span class="fw">navbar-dark</span> class will yield light lettering in the navbar and vice versa</li>
+		    <li>make sure that the navbar is expanded for small sized screens and bigger</li>
+		    <li>in the main section use appropriate Bootstrap rows and columns to create the layout (information about Bootstrap 4 grid system can be found <a href="https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp">here</a>)</li>
+		    <li>use the Bootstrap 4 margin and padding classes (see section Spacing <a href="https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp">here</a>) alongside class <span class="fw">card</span> to space out the elements</li>
+		    <li>use background and text centering classes alongside <span class="fw">card-body</span> to style the text in the cards (see classes <span class="fw">text-*</span> <a href="https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp">here</a>)</li>
+		    <li>for the footer, you can use the <span class="fw">fixed-bottom</span> class, background, text formatting and padding classes to get the desired effect</li>
+		    </li>
+		</ul>
+	    </li>
+	</ul>
+    </body>
+</html>
+
+		
