@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Strings Exercise</title>
+	<style>
+	 button { padding: 1em; margin: 1em;}
+	 p { margin: 0 1em; }
+	</style>
+    </head>
+    <body>
+	<button onclick="writeRandomWord();" type="button">Click to get a random 5 letter word</button>
+	<button onclick="writeRandomWord1();" type="button">Click to get a truly random 5 letter word</button>
+	<p id="rand-word"></p>
+	<p id="rand-word1"></p>
+	
+
+
+	<script>
+
+		// Part 1
+		
+		function writeRandomWord() {	
+    
+				const alphabet = "abcdefghijklmnopqrstuvwxyz";
+				let randomWord = ""
+				randomWord += alphabet.charAt(0); 
+				randomWord += alphabet.charAt(2); 
+				randomWord += alphabet.charAt(4); 
+				randomWord += alphabet.charAt(6);
+				randomWord += alphabet.charAt(8);
+
+				document.getElementById('rand-word').innerHTML = randomWord;
+	 
+		}
+
+		 // Part 2
+
+		function writeRandomWord1() {
+
+		 		const alphabet = "abcdefghijklmnopqrstuvwxyz";
+				let randomWord = ""
+					randomWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+					randomWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+					randomWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+					randomWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+					randomWord += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+
+				document.getElementById('rand-word1').innerHTML = randomWord;
+
+		}
+
+
+	</script>
+    </body>
+</html>

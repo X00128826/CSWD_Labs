@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<style>
+	 section { margin: 3em; }
+	 .flex { width: 20em; display: flex; justify-content: space-between; }
+	</style>
+    </head>
+    <body>
+	<section id="ex1">
+	    <p class="flex">
+		<input id="num1" type="number"> <input id="num2" type="number">
+	    </p>
+	    <p class="flex">
+		<button type="button" onclick="add();">Add</button>
+		<button type="button" onclick="subtract();">Subtract</button>
+		<button type="button" onclick="multiply();">Multiply</button>
+		<button type="button" onclick="divide();">Divide</button>
+	    </p>
+	    <p>Answer: <span id="answer"></span></p>
+	</section>
+	<script type="text/javascript" src="ex.js"></script>
+    </body>
+</html>
