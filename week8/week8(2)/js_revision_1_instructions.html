@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript CA Practice</title>
+	<style>
+	 body { background: lightgray; }
+	 button { font-size: large; padding: 0.3em; background: darkgray;}
+	</style>
+	<script type="text/javascript"></script>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd-ft/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Revision Exercises 1</h1>
+
+	    <ol>
+		<li>Include Javascript code <strong>internally</strong> in the HTML file
+		    <br/><br/><strong>Example:</strong><br/>
+		    Add some code internally in the document body of <span class="fw">js_ca_practice_workfile.html</span>. The code should post an alert with message 'Hello' and write the same string to the console. Test that your code runs by loading the page.
+		</li>
+		
+		<li>Include Javascript code <strong>externally</strong> i.e. from a separate Javascript file
+		    <br/><br/><strong>Example:</strong><br/>
+		    Create a Javascript file called <span class="fw">practice.js</span>. Place the file in a folder called <span class="fw">scripts</span> in the same folder as <span class="fw">js_ca_practice_workfile.html</span>. In the file <span class="fw">practice.js</span>, write some code that posts an alert with message 'Hello from practice file!' and writes the same to the console. Include <span class="fw">practice.js</span> at the end of the document body of <span class="fw">js_ca_practice_workfile.html</span>. Test that your code runs by loading the page.
+		</li>
+		<li>Use API output functions <span class="fw">alert()</span> and <span class="fw">console.log()</span>
+		    <br/><br/><strong>Examples:</strong>
+		    <ol type="a">
+			<li>In <span class="fw">practice.js</span>, write a line of code that causes an alert window to pop up when the page is loaded.</li>
+			<li>In the file <span class="fw">js_ca_practice_workfile.html</span> internally include some code that causes the string <span class="fw">Hello, hello!</span> to be output to the console while the HTML page is being loaded.</li>
+		    </ol>
+		</li>
+		<li>Define a function with no parameters or with one parameter
+		    <br/><br/><strong>Examples:</strong>
+		    <ol type="a">
+			<li>Define a function called <span class="fw">writeInfoToConsole()</span> internally in the file <span class="fw">js_ca_practice_workfile.html</span>. The function should write three short lines of information about any topic to the console. Load the html page and run your function in the console to test it.</li>
+			<li>In <span class="fw">practice.js</span>, define a function called <span class="fw">doubleTheNumber</span> with one parameter. The function should multiply by 2 the number passed in and write the result to the console. Load the html page and run your function in the console to test it.</li>
+		    </ol>
+		</li>
+
+		<li>Read from an element in the document
+		    <br/><br/><strong>Example:</strong><br/>
+		    Write a function that reads the contents of the paragraph element with id <span class="fw">my-text</span> in <span class="fw">js_ca_practice_workfile.html</span> and writes it to the console. Load the html page and run your function in the console to test it.
+		</li>
+		
+		<li>Write to an element in the document
+		    <br/><br/><strong>Example:</strong><br/>
+		    Write a function that sets the string "Ho ho ho here we go" as the contents of the element with id <span class="fw">text-destination-1</span>. Load the html page and run your function in the console to test it.		    
+		</li>
+		
+		<li>Set up an event handler
+		    <br/><br/><strong>Example:</strong><br/>
+		    Set up an event handler by modifying the HTML file so that when the button <strong>Alert!</strong> in file <span class="fw">js_ca_practice_workfile.html</span> is clicked an alert pops up saying "You've clicked the button!". Test your solution by clicking the button.
+		</li>
+
+		<li>Read input from an input element
+		    <br/><br/><strong>Example:</strong><br/>
+		    Write a function that reads the input from the input element with id <span class="fw">text-input</span> in <span class="fw">js_ca_practice_workfile.html</span> and writes it to the console. Load the html page and run your function in the console to test it.
+		</li>
+
+		<li>Create HTML elements in an HTML file
+		    <br/><br/><strong>Examples:</strong>
+		    <ol type="a">
+			<li>Create a paragraph element in <span class="fw">js_ca_practice_workfile.html</span>.</li>
+			<li>Create an input element of type <span class="fw">date</span> in <span class="fw">js_ca_practice_workfile.html</span>.</li>
+			<li>Create a label element with text <strong>Date:</strong> just in front of the date input element.</li>
+		    </ol>
+		</li>
+
+		<li>Add attributes to HTML elements
+		    <br/><br/><strong>Examples:</strong>
+		    <ol type="a">
+			<li>Assign the paragraph element created above (in the first example for <em>Create HTML element in an HTML file</em>) to class <span class="fw">abc</span>.</li>
+			<li>Add an id (any value you choose) to the input element created above (in the second example for <em>Create HTML element in an HTML file</em>).</li>
+			<li>Add the attribute <span class="fw">from</span> to the label element created above, so as to associate it with the date input element.</li>
+		    </ol>
+		</li>
+
+		<li>Perform several of the above together
+		    <br/><br/><strong>Examples:</strong>
+		    <ol type="a">
+			<li>Write a Javascript function internally in the html file <span class="fw">js_ca_practice_workfile.html</span> that copies the contents of the element with id <span class="fw">my-text</span> to the element with id <span class="fw">text-destination-2</span>. Set up an event handler so that when the button <strong>Copy my text to destination 2</strong> is clicked that function is called. Test your solution by loading the HTML page and clicking on the button.</li>
+			<li>Set up an event handler so that when button <strong>Double the number</strong> is clicked, the number typed into the number input element (to the left of the button) is multiplied by two and the answer displayed in the paragraph element that follows the text "Answer: " (to the right of the button), in the file <span class="fw">js_ca_practice_workfile.html</span>. Define a function for this and add any attributes you need onto the button and the paragraph element. Test your solution by loading the HTML page and clicking on the button.</li>
+		    </ol>
+		</li>
+
+		<li>Conditional statements
+		    <br/><br/><strong>Example:</strong><br/>
+		    Working with HTML file <span class="fw">js_ca_practice_workfile.html</span>, write a function that toggles the bakground colour of the <span class="fw">div</span> element with content <span class="fw">My box</span> between <span class="fw">lightblue</span> and <span class="fw">lightsalmon</span>. The property that controls the background colour of an element is <span class="fw">style.background</span>. Set up an event handler that calls this function when the button <strong>Toggle colour</strong> is clicked. You may add ids or classes to the elements in the HTML file. (The conditional statement in this example is checking what the colour currently is so that the change can be made to the other colour).
+		</li>
+	    </ol>
+	</div>
+    </body>
+</html>

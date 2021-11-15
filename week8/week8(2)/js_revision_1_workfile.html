@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>JS CA Practice Workfile</title>
+	<style>
+		.fbc {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		.fbi {
+			border: 1px solid black;
+			width: 30%;
+			min-height: 2em;
+			margin: 0 1em 1em 0;
+			padding: 0.5em;
+		}
+
+		button {
+			padding: 0.5em;
+		}
+
+		button,
+		input {
+			margin: 0 1em 1em 0;
+		}
+
+		.blue {
+			background: lightsalmon;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		table {
+			border: 1px solid black;
+			border-collapse: collapse;
+			margin: 0.5em 0;
+		}
+
+		table th,
+		table td {
+			border: 1px solid black;
+			padding: 0.3em;
+			text-align: left;
+		}
+
+		.page {
+			border: 2px solid gray;
+			background: lightgray;
+			padding: 0.5em;
+			width: 30em;
+			max-width: 100%;
+		}
+	</style>
+	<!--Exercise 1-->
+	<script>
+		alert('Hello!');
+		console.log('Hello again!');
+	</script>
+
+	<!--Exercise 3 (b)-->
+	<script>
+		alert("Hello, hello")
+	</script>
+	<!--
+	<script>
+		writeInfoToConsole() {
+			cosnole.log("This is a maths equation:");
+			console.log("3 + 3");
+			console.log("The answer to the above equation is 6.");   
+	}
+
+	</script>-->
+
+	<script>writeInfoToConsole();</script>
+
+<script type="text/javascript" src="practice.js"></script>
+
+</head>
+
+<body>
+	<h1>Javascript Revision 1 Workfile</h1>
+
+	<!--Exericse 5-->
+	<p id="my-text">This is a paragraph of very interesting text.</p>
+	<script>readParagraph()</script>
+
+	<!--Exercise 6-->
+	<p id="text-destination-1"></p>
+	<script>writeParagraph()</script>
+
+	<!--Exercise 7-->
+	<button type="button" id="alert" onclick="writeAlert()">Click for alert!</button>
+
+	<!--Exercise 8-->
+	<input type="text" id="text-input">
+	<script>readInput()</script>
+
+	<!--Exercise 9 + 10(a/b/c)-->
+	<p class="abc">
+	<form>
+		<label>Date</label>
+		<input type="date" id="ex9"></p>
+	</form>
+
+	<!--Exercise 11 (a)-->
+	<script>
+		function ex11() {
+			var x = document.getElementById("my-text").textContent;
+			document.getElementById("text-destination-2").innerHTML;
+			console.log(x)
+		}
+	</script>
+
+	<!--Exercise 8-->
+
+	<div class="fbc">
+		<p class="fbi" id="text-destination-1"></p>
+
+		<p class="fbi" id="text-destination-2"></p>
+	</div>
+
+	<button>Alert!</button> 
+
+	<input type="text">
+
+	<br /><br />
+
+	<!--Exercise 11 (a)-->
+	<p><button type="button" id="text-destination-2" onclick="ex11()">Copy my text to destination 2</button></p>
+
+	
+	<!--Exercise 11 (b)-->
+	<script>function doubleAnotherTheNumber() {
+		var x = document.getElementById("a-number").textContent;
+		num = x * 2;
+		document.getElementById("double-number").value.num;
+		document.getElementById("double-number").innerHTML;
+	}
+	</script>
+
+		Enter a number: <input type="number" id="a-number"><button type="button" onclick="doubleTheNumber(2)">Double
+		the number</button> Answer: <p id="double-number"></p>
+		
+
+	<div id="my-box" class="fbi blue center">
+		<h3>My box</h3>
+	</div>
+	<button type="button" id="btn-colour">Toggle colour</button>
+	
+	<!--Exercise 12-->
+	<script>
+		function changeBackgroundColour() {
+				var x = document.getElementById("btn-colour").value
+		}
+	</script>
+
+
+
+<script src="practice.js"></script>
+</body>
+
+</html>
