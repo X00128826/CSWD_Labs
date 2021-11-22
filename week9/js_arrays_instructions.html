@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Conditional Statements and Loops</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Array Exercises</h1>
+
+	    <section class="box">
+		<h3>Exercise 1: Array operations</h3>
+
+		<p>Starting with the first array assigned to variable <span class="fw">toolArray</span>, write Javascript snippets that convert the array <span class="fw">toolArray</span> from each shown value to the next. To try these out, use the console. To submit, place the code in a file called <em>arrays.js</em>.</p>
+		<ol>
+		    <li><span class="fw">['jigsaw', 'hammer', 'pliers', 'hacksaw', 'spanner', 'screwdriver']</span></li>
+		    <li><span class="fw">['jigsaw', 'hammer', 'pliers', 'hacksaw', 'spanner', 'screwdriver', 'level']</span></li>
+		    <li><span class="fw">['jigsaw', 'hammer', 'pliers', 'hacksaw', 'spanner']</span></li>
+		    <li><span class="fw">['hacksaw', 'hammer', 'jigsaw', 'pliers', 'spanner']</span></li>
+		    <li><span class="fw">['spanner', 'pliers', 'jigsaw', 'hammer', 'hacksaw']</span></li>
+		    <li><span class="fw">['spanner', 'pliers', 'plane', 'hammer', 'hacksaw']</span></li>
+		    <li><span class="fw">['spanner', 'plane', 'hammer', 'hacksaw']</span></li></pre>
+		</ol>
+	    </section>
+	    
+	    <section class="mt1 box">
+		<h3>Exercise 2: Arrays and strings</h3>
+		<img class="fr mx1 mb1" src="tea_or_coffee_wishes_list.png" width="200">
+		<p>Copy the following HTML code into the body of a skeleton HTML file:</p>
+		<pre>
+&lt;p>&lt;label for="names-input">Names:&lt;/label> &lt;input id="names-input" type="text" size=70>&lt;/p>
+&lt;p>&lt;label for="tc-input">Tea/coffee:&lt;/label> &lt;input id="tc-input" type="text">&lt;/p>
+&lt;button type="button" onclick="makeTCOrderListFromInputs();">Make order list from inputs&lt;/button>
+&lt;ul id="order-list">&lt;/ul></pre>	    
+
+		<p>Include the file <em>arrays.js</em> (created for exercise 1) in the HTML file using a <span class="fw">script</span> element.</p>
+		<p>In the Javascript file, write the function <span class="fw">makeTCOrderListFromInputs</span>, so that it</p>
+		<ul>
+		    <li>reads the two inputs, assuming that
+			<ul>
+			    <li>the first (id 'names-input') contains a list of names separated by spaces</li>
+			    <li>the second (id 'tc-input') contains a string consisting of the letters 'T' and 'C'</li>
+			    <li>the number of names in the first input is the same as the number of letters in the second</li>
+			</ul>
+		    </li>
+		    <li>splits the string containing the names into a Javascript array of names</li>
+		    <li>writes into the HTML unordered list element (id 'order-list') entries like the ones shown on the right</li>
+		    <li>the entries are based on the input names, each associated by position with a T or a C in the other input ('T' meaning tea and 'C' meaning coffee)</li>
+		</ul>
+
+		<p>A video of sample expected behaviour can be found <a href="https://screencast-o-matic.com/watch/cYXbboLjLE" class="blue underline">here</a>.</p>
+	    </section>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" />
+	<link rel="stylesheet" type="text/css" href="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/styles/common.css">
+	
+	<title>Javascript Conditional Statements and Loops</title>
+	<style>
+	 body { background: lightgray; }
+	</style>
+    </head>
+
+    <body>
+	<header id="tudheader">
+	    <img src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/images/tudublin_logo.png" alt="TU Dublin Logo">
+	    <div id="tuddepttext">
+		<p>Tallaght Campus</p>
+		<p>Department of Computing</p>
+	    </div>
+	    <img id="rightlogo" src="https://jelena-vk-itt.github.io/jvk-tudt-notes/cswd/res/images/logo.png" alt="CSWD Logo">
+	</header>
+
+	<nav>
+	    
+	</nav>
+
+	<div id="content">
+	    
+	    <h1>Javascript Loop Exercises</h1>
+
+	    <p>For these exercises you are given the files <em>loops.html</em> and <em>loops.js</em>. The Javascript file has been included in the HTML file.</p>
+	    
+	    <section class="box">
+		<h3>Exercise 1: Print Even Numbers</h3>
+		<ul>
+		    <li>In the file <em>loops.js</em>, declare a function called <span class="fw">printEven</span>, with one parameter called <span class="fw">max</span>.</li>
+		    <li>Define the function so that it prints out to the console all even numbers starting at <span class="fw">0</span> and ending at <span class="fw">max</span> (not including <span class="fw">max</span>).</li>
+		    <li>Use a <span class="fw">for</span> loop in the function.</li>
+		    <li>Test the function by loading the HTML file and calling the function from the console.</li>
+		</ul>
+	    </section>
+
+	    <section class="box mt1">
+		<h3>Exercise 2: Spacing out letters</h3>
+		<ul>
+		    <li>In file <em>loops.js</em>, declare a function called <span class="fw">appendSpace</span>, with one parameter called <span class="fw">str</span>.</li>
+		    <li>This function should return a string that consists of the passed-in value in <span class="fw">str</span> and a space character concatenated together.</li>
+		    <li>In file <em>loops.js</em>, declare a function called <span class="fw">spaceOut</span>, with no parameters.</li>
+		    <li>Define this function so that it
+			<ul>
+			    <li>reads the string contained in the input element with id "word"</li>
+			    <li>iterates through the characters of the string and for each
+				<ul>
+				    <li>calls function <span class="fw">appendSpace</span>, passing in the character</li>
+				    <li>appends the returned value to the paragraph element with id 'spaced'</li>
+				</ul>
+			    </li>
+			</ul>
+		    </li>
+		    <li>Set function <span class="fw">spaceOut</span> as the handler for clicks on the button <strong>Space out</strong> and test.</li>
+		    <li>Video of sample required behaviour can be found <a class="blue underline" href="https://screencast-o-matic.com/watch/cYXD3dLfky">here</a>.</li>
+		</ul>
+	    </section>
+	    
+	    <section class="box mt1">
+		<h3>Exercise 3: Paragraphs</h3>
+		<ul>
+		    <li>In file <em>loops.js</em>, declare a function called <span class="fw">populateTemplate</span>, with no parameters.</li>
+		    <li>Define the function so that it
+			<ul>
+			    <li>reads the number from the input element with id 'num-pgphs' and writes it to the variable <span class="fw">numberOfParagraphs</span></li>
+			    <li>uses a for loop to iterate through numbers 1 to <span class="fw">numberOfParagraphs</span></li>
+			    <li>at each iteration adds a paragraph element to the element with id 'txt'</li>
+			    <li>the paragraph elements should have the text 'Paragraph 1', 'Paragraph 2' etc.</li>
+			</ul>
+		    </li>
+		    <li>Set this function as the handler for clicks on the button <strong>Populate story template</strong> and test.</li>
+		    <li>Video of sample required behaviour can be found <a class="blue underline" href="https://screencast-o-matic.com/watch/cYXDYnLex0">here</a>.</li>
+		</ul>
+	    </section>
+
+	    
+	    <script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/common.js"></script>
+	    <script src="https://jelena-vk-itt.github.io/jvk-tudt-notes/common/res/scripts/main.js"></script>
+	    <script>init_all();</script>
+
+	    <!-- Script file containing exercises -->
+	    <script src="ex.js"></script>
+	</div>
+    </body>
+</html>
