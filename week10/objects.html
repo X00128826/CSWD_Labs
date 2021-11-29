@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Enter your first name:</label>
+    <input type="text" id="name">
+<br>
+<br>
+    <label for="surname">Enter your surname:</label>
+    <input type="text" id="surname">
+<br>
+<br>
+    <label for="year">Enter your current college year:</label>
+    <input type="number" id="year">
+<br>
+<br>
+    <label for="cousre">Select your cousre:</label>
+    <input list="course">
+    <datalist id="course">
+        <option value="Software Development"></option>
+        <option value="IT Management"></option>
+        <option value="Computing with Language"></option>
+        <option value="Computing in DA"></option>
+    </datalist> 
+<br>
+<br>
+    <button type="button" id="button1" onclick="saveData()">Save Data</button>
+    <button type="button" id="button2" onclick="printData()">Create Message</button>
+
+    <p id="paragraph"></p>
+
+    <script src="ex1.js"></script>
+    
+</body>
+</html>
